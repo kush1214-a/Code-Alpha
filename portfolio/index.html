@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/877255bed3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     
+    <!-- Home -->
+
+    <div id="header">
+        <div class ="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fas fa-times" onclick="closemenu()"></i> 
+                </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Web Developer</p>
+                <h1>Hi, I'm <span>Kush </span> Kumar<br> From Bihar</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" >
+        <div class="container">
+            <div class="row">
+
+                <div class ="about-col-1">
+                    <img src="image/kush_image_1.png">
+                </div>
+
+                <div class ="about-col-2">
+                    <h1 class ="sub-title">About Me</h1>
+                    <p>
+                        Highly motivated and enthusiastic would-be graduate 
+                        seeking an entry-level position. Results-driven 
+                        Computer Science student with a strong
+                        foundation in IT security, IT general controls, 
+                        and network security. Adept in Microsoft Office tools
+                        and committed to effective cross-cultural
+                        collaboration.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                        <p class="tab-links" onclick="opentab('educations')">Educations</p>
+                    </div>
+                    <!-- Skills  -->
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Language</span><br>Data Structured Algorithm <br> Java</li>
+                            <li><span>Web Development</span><br> HTML, CSS, JS</li>
+                            <li><span>Database</span><br> SQL</li>
+                            <li><span>Microsoft</span><br> Excel, Word, Powerpoint</li>
+                        </ul>
+                    </div>
+                    <!-- Certificates  -->
+                    <div class="tab-content" id="certificates">
+                        <ul>
+                            <li><span>2024</span><br> Programming in Java from NPTEL</li>
+                            <li><span>2024</span><br> Data Base Management System from Springboard</li>
+                            <li><span>2024</span><br> Basic Java from Springboard</li>
+                            <li><span>2022</span><br> Ms Excel from Elearnmarkets</li>
+                        </ul>
+                    </div>
+                    <!-- Educations  -->
+                    <div class="tab-content" id="educations">
+                        <ul>
+                            <li><span>2022-Appearing</span><br> B.Tech in CSE <br> from  Amity University, Jharkhand</li>
+                            <li><span>2018-2021</span><br> Dipoma in  ME<br> from  LNCT University, Bhopal</li>
+                            <li><span>2017-2018</span><br> Matriculation<br>from New Horizon School, Bhagalpur</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+     
+    <!-- Projects -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+                <div class="project-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Amazone Clone</h2>
+                        <p>An Amazon clone using HTML and CSS is a front-end project 
+                            that mimics the look and layout of Amazon's homepage or product page.
+                             It’s a great way to practice web development skills.</p>
+                        <a href="https://github.com/kush1214-a/Code-Alpha/tree/main/amazon">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-file"></i>
+                        <h2>Weather API's</h2>
+                        <p>A Weather API using HTML, CSS, and JavaScript 
+                            is a simple web app that lets users enter a 
+                            city name and see current weather information (like temperature and conditions). </p>
+                        <a href="https://github.com/kush1214-a/Code-Alpha/tree/main/Weather">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <h2>Simple Calculator</h2>
+                        <p>A simple calculator using HTML, CSS, and JavaScript
+                            is a basic web application that performs arithmetic 
+                            operations such as addition, subtraction, multiplication, and division.</p>
+                        <a href="https://github.com/kush1214-a/Code-Alpha/tree/main/calculator">learn more</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+  
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="image/number_guessing.jpg">
+                        <div class="layer">
+                            <h3>Number Guessing Game</h3>
+                            <p>The Number Guessing Game is a simple interactive
+                                 program developed using pure JavaScript that 
+                                 challenges the user to guess a randomly generated 
+                                 number between 1 and 100. </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/tic_tac_toe.jpeg">
+                        <div class="layer">
+                            <h3>Tic-Tac-Toe Game</h3>
+                            <p>Tic Tac Toe is a classic two-player game where players 
+                                take turns marking X and O on a 3×3 grid.
+                                 The goal is to be the first to get three of
+                                  your marks in a row—horizontally, vertically, 
+                                 or diagonally.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/person.jpeg">
+                        <div class="layer">
+                            <h3>Project 3</h3>
+                            <p>geywgfehwoid</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>kushkumar4510@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 6299904510</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/killer.kush.04/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://wa.me/6299904510"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/kush-kumar-60a4a428b/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/kush1214-a"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="image/kush kumar.pdf" download class="btn">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="4" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                <div class="copyright">
+                    <p>Copyright &copy; 2024 All Rights Reserved | Kush Kumar</p>
+                </div>
+            </div>
+        </div>
+
+
+    <script>
+        var tabcontent = document.getElementsByClassName("tab-content");
+        var tablinks = document.getElementsByClassName("tab-links");
+
+        function opentab(tabname) {  
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyjaGE0N2oilOKoo0PGdXh9XClrJJOd5ZsSEsfk9pAHQME32kkSGjsbDAI5Z487UzGTUg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){msg.innerHTML = ""}, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+
+</body>
+</html>

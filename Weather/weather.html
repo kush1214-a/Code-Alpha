@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" href="weather.css">
+	
+</head>
+
+<body>
+	<div class="container">
+		<div class="weather-card">
+			<h1 style="color: green;">
+				Weather Report
+			</h1>
+			
+			<input type="text" id="city-input"
+				placeholder="Enter city name">
+			<button id="city-input-btn"
+					onclick="weatherFn($('#city-input').val())">
+					Get Weather
+			</button>
+			<div id="weather-info"
+				class="animate__animated animate__fadeIn">
+				<h3 id="city-name"></h3>
+				<p id="date"></p>
+				<img id="weather" src="image/weather.jpg" alt="weather">
+				<p id="temperature"></p>
+				<p id="description"></p>
+				<p id="wind-speed"></p>
+			</div>
+		</div>
+	</div>
+	<script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script>
+	<script src="weather.js"></script>
+</body>
+
+</html>

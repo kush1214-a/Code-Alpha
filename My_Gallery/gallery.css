@@ -1,0 +1,119 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+  }
+  
+  /* Main Carousel Layout */
+  .carousel {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* Main image list: takes 75% height */
+  .list {
+    height: 75%;
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .list .item {
+    min-width: 100%;
+    height: 100%;
+  }
+  
+  .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Thumbnails: take 20% height, fixed area below the main image */
+  .thumbnail {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    background: #000;
+  }
+  
+  .thumbnail .item {
+    flex: 0 0 auto;
+    width: 60px;
+    height: 60px;
+    opacity: 0.6;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+  
+  .thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .thumbnail .item.active,
+  .thumbnail .item:hover {
+    opacity: 1;
+    border-color: white;
+  }
+  
+  /* Arrows */
+  .arrows {
+    position: absolute;
+    top: calc(75% / 2); /* center within list area */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .arrows button {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Progress Bar */
+  .time {
+    height: 5%;
+    background: white;
+    width: 0%;
+    animation: progress 5s linear infinite;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  @keyframes progress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
